@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi CV - Nelson Fletcher</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Estilos personalizados -->      
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+
+    <!-- L I B R E R I A C H A R S J S -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- L I B R E R I A C H A R S J S -->
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Julio Sosa - CV</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#acercademi">Acerca de mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#estudios">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">Experiencia Laboral</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#otrashabilidades">Otras Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#barrahabilidades">Barra Habilidades</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div class="row">  
+          <div class="col-sm-8">
+            <h2 id="acercademi">Acerca de mi</h2> 
+            <p>Gestor de contabilidad a tiempo completo con 10 años de experiencia en administración de sueldos, contabilidad empresarial, análisis de riesgos, presupuestos y recursos humanos.</p> 
+            <p>Mi experiencia incluye trabajo amplio en cuentas por pagar, cuentas por cobrar, cobranza, informes financieros y auditorías.</p>
+            <hr>
+            <h2 id="estudios">Estudios</h2>
+            <ul>
+              <li>Escuela Secundaria Increíble
+                <p>Mención honorífica, 2012</p>
+              </li>
+              <li>Universidad Increíble.
+                <p>Licenciatura en Contabilidad, 2017</p>
+              </li>
+            </ul>
+            <hr>
+            <h2 id="experiencia">Experiencia Laboral</h2>
+            <ul><p><strong>Empresa: </strong>Soto y Ochoa - Buenos Aires</p>
+              <p><strong>Puesto: </strong>Gerente de contabilidad, 2018 - Actualidad</p>
+              <li>Hice presupuestos periódicos para prever las exigencias mensuales de efectivo.</li>
+              <li>Redacté informes financieros y reglamentarios de ley para incorporar y abrir oficinas en Córdoba y Río Negro.</li>
+              <li>Redacté previsiones de gastos mensuales y anuales, además de todas las acciones necesarias para administrar costos conforme al presupuesto.</li>
+            </ul>
+            <hr>
+            <h2 id="habilidades">Habilidades</h2>
+            <ul>
+              <li>Hice presupuestos periódicos para prever las exigencias mensuales de efectivo.</li>
+              <li>Redacté informes financieros y reglamentarios de ley para incorporar y abrir oficinas en Córdoba y Río Negro.</li>
+              <li>Redacté previsiones de gastos mensuales y anuales, además de todas las acciones necesarias para administrar costos conforme al presupuesto.</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 itemcenter columna-der">
+            <img class="img-fluid imagencv" src="imagen/fotocv.jpg">
+            <hr>
+            <h2 id="contacto">Contacto</h2>
+            <ul class="contacto">
+              <li>Nombre: Julio Sosa</li>
+              <li>Edad: 24</li>
+              <li>Email: anthony@company.com</li>
+              <li>Dirección: 140, City Center, New York, U.S.A</li>
+            </ul>
+            <hr>
+            <h2 id="otrashabilidades">Otras habilidades</h2>
+            <ul class="contacto">
+              <li>Lenguajes programación: HTML, Javascritp, CSS, PHP, MySql</li>
+              <li>Idiomas: Ingles B1</li>
+            </ul>
+            <hr>
+            <h2 id="barrahabilidades">Barra habilidades</h2>
+              <canvas id="myChart"></canvas>
+                  <script>
+                    const ctx = document.getElementById('myChart');
+
+                    new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                        labels: ['HTML', 'JS', 'PHP', 'MySQL', 'CSS'],
+                        datasets: [{
+                          label: '# Porcentaje',
+                          data: [90, 76, 60, 70, 90],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+          </div>  
+        </div>
+  
+            
+          </div>
+        </div>
+        
+      </div>
+
+      <footer class="piepagina">
+      
+        <p>Gerónimo Roldán - 2023</p>
+      
+    </footer>
+    </main>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+      
+  </body>
+</html>
